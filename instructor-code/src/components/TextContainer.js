@@ -12,21 +12,21 @@ export default class TextContainer extends Component {
   updateText(e) {
     this.setState({
       text: e.target.value
-    })
+    }) 
   }
 
   render() {
     return (
       <div className="textContainer">
-        <textarea
-          style={{
-            fontFamily: this.props.fontFamily,
-            color: this.props.fontColor,
-            fontSize: this.props.fontSize
-          }}
-          // in CSS => font-family / color / font-size (kabob case) ; in JSX => fontFamily, color, fontSize (camel case)
+        <textarea 
+          style={ 
+            {
+              fontFamily: this.props.fontFamily, 
+              color: this.props.fontColor,
+              fontSize: this.props.fontSize
+            } }
           onChange={this.updateText}
-          value={this.state.text}
+          value={this.state.text} 
           placeholder='Start typing your thoughts here!'
           cols="90"
           rows="30">

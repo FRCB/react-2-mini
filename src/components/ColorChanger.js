@@ -5,7 +5,7 @@ export default function ColorChanger(props) {
     <select
       className="dropDownContainer"
       onChange={(e) => props.update(e.target.value)}
-    // no "this" in functional component
+    // no "this" on functional component (here we are not in a CLASS)
     >
       <option value="black"> Black </option>
       <option value="blue"> Blue </option>

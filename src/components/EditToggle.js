@@ -5,7 +5,7 @@ export default function EditToggle(props) {
     <select
       className="dropDownContainer ml0"
       onChange={(e) => props.update(e.target.value)}
-    // no "this" in functional component
+    // no "this" on functional component (here we are not in a CLASS)
     >
       <option value="true"> Allow Edit </option>
       <option value="false"> Disable Edit </option>

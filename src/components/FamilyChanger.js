@@ -5,7 +5,7 @@ export default function FamilyChanger(props) {
     <select
       className="dropDownContainer"
       onChange={(e) => props.update(e.target.value)}
-    // no "this" in functional component
+    // no "this" on functional component (here we are not in a CLASS)
     >
       <option value="monospace"> Monospace </option>
       <option value="arial"> Arial </option>
